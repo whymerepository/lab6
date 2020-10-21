@@ -12,7 +12,7 @@ int main()
 	printf("Columns: ");
 	scanf_s("%d", &columns);
 
-	matrix = (int*)calloc(sizeof(int), raws * columns);
+	matrix = (int*)calloc(raws * columns, sizeof(int));
 	for (int i = 0; i < raws; i++)
 		for (int j = 0; j < columns; j++)
 			scanf_s("%d", (matrix + i*columns + j));
